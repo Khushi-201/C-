@@ -1,0 +1,1 @@
+The compiler will throw a no match error for operator+ when an integer is added to a string.
