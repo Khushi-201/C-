@@ -1,0 +1,26 @@
+#include<iostream>
+#include<ctime>
+using namespace std;
+int main()
+{
+     int c;
+     time_t now=time(0);
+     char *dt=ctime(&now);
+     cout<<" 1.Year\n2.Month\n3.Date\n4.Day"<<endl;
+     cout<<"Enter your choice:"<<endl;
+     cin>>c;
+     switch(c)
+     {
+        case 1: cout<<"CURRENT YEAR:"<<dt<<endl;
+        break;
+                case 2: cout<<"CURRENT MONTH:"<<dt<<endl;
+        break;
+                case 3: cout<<"CURRENT DATE:"<<dt<<endl;
+        break;
+                case 4: cout<<"CURRENT DAY:"<<dt<<endl;
+        break;
+        default: cout<<"Not available"<<endl;
+        break;
+        }
+        return 0;
+}
